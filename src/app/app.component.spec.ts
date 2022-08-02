@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ngx-signaturepad-demo'`, () => {
+  it(`should have as title 'ngx-signaturepad-pregiotek'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ngx-signaturepad-demo');
+    expect(app.title).toEqual('ngx-signaturepad-pregiotek');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ngx-signaturepad-demo app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ngx-signaturepad-pregiotek app is running!');
   });
 });

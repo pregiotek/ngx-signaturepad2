@@ -1,9 +1,9 @@
 # NgxSignaturepad2
 
-Angular 8 component for [szimek/signature_pad](https://www.npmjs.com/package/signature_pad).
+Angular 13 component for [szimek/signature_pad](https://www.npmjs.com/package/signature_pad).
 
 ## Install
-`npm install ngx-signaturepad2 --save`
+`npm install ngx-signaturepad-pregiotek --save`
 
 ## Reference Implementation
 * [Source](https://github.com/jeremyj11/ngx-signaturepad2/)

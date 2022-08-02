@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-signaturepad-demo": {
+    "ngx-signaturepad-pregiotek": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,12 +17,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-signaturepad-demo",
+            "outputPath": "dist/ngx-signaturepad-pregiotek",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -45,10 +45,10 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "aot": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-signaturepad-demo:build"
+            "browserTarget": "ngx-signaturepad-pregiotek:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-signaturepad-demo:build:production"
+              "browserTarget": "ngx-signaturepad-pregiotek:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-signaturepad-demo:build"
+            "browserTarget": "ngx-signaturepad-pregiotek:build"
           }
         },
         "test": {
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-signaturepad-demo:serve"
+            "devServerTarget": "ngx-signaturepad-pregiotek:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-signaturepad-demo:serve:production"
+              "devServerTarget": "ngx-signaturepad-pregiotek:serve:production"
             }
           }
         }
@@ -160,5 +160,5 @@
         }
       }
     }},
-  "defaultProject": "ngx-signaturepad-demo"
+  "defaultProject": "ngx-signaturepad-pregiotek"
 }
